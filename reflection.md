@@ -8,6 +8,12 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
+1. Press enter to apply did not actually work
+2. I have to click 'Submit Guess' button 2x
+3. The hint was wrong. It always said 'Go Higher' but that wasn't the case
+4. When I click the 'New Game' button after winning, it doesn't actually start a new game welp. It just resets the attempts number. It no longer stores the history of the input in that new game
+5. In the middle of the game and before winning, when I try to do 'new game', it still stores the old history
+   1. This also makes the game go out of attempts earlier than expected
 ---
 
 ## 2. How did you use AI as a teammate?
