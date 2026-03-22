@@ -147,6 +147,7 @@ if st.session_state.status != "playing":
 if submit:
     st.session_state.attempts += 1
 
+    # BUG here since it cannot parse raw guess
     ok, guess_int, err = parse_guess(raw_guess)
 
     if not ok:
@@ -155,6 +156,7 @@ if submit:
     else:
         st.session_state.history.append(guess_int)
 
+        # BUG BUG here
         if st.session_state.attempts % 2 == 0:
             secret = str(st.session_state.secret)
         else:
