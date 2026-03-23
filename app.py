@@ -156,11 +156,11 @@ if submit:
     else:
         st.session_state.history.append(guess_int)
 
-        # BUG BUG here
-        if st.session_state.attempts % 2 == 0:
-            secret = str(st.session_state.secret)
-        else:
-            secret = st.session_state.secret
+        # BUG here - remove the type casting [FIXED]
+        # if st.session_state.attempts % 2 == 0:
+        #     secret = str(st.session_state.secret)
+        # else:
+        secret = st.session_state.secret
 
         outcome, message = check_guess(guess_int, secret)
 
