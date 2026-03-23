@@ -49,6 +49,12 @@ AI helped me in understanding the issue with my tests because initially it was j
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit is a python library that creates interactive web pages from python scripts. 
+
+Reruns are when a user interacts with the app. Each button click or interaction makes the app re-execute from top to bottom
+
+Because these reruns happen, the session state is important to preserve the value of variables from one state to the next
+
 ---
 
 ## 5. Looking ahead: your developer habits
