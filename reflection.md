@@ -24,6 +24,15 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ---
 
+I used Claude Opus 4.5
+
+**Example of correct AI suggestion:** It correctly pointed out where the bug for incorrect guess was
+
+**Example of misleading suggestion:** When the pytest was not working because of path import error, it suggested I create a conftest.py file and then set the path. 
+I questioned this suggestion because it adds an unnecessary file to the codebase. Instead, it can be helpful to just add the path there
+
+
+
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
@@ -31,6 +40,9 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+I played the game again to check whether the 2 bugs (incorrect hints and 2 tries to submit one guess) were fixed or not. I ran both manual and pytest. 
+
+AI helped me in understanding the issue with my tests because initially it was just result == "win". But the output returned by check_guess is actually an array
 ---
 
 ## 4. What did you learn about Streamlit and state?
@@ -45,3 +57,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+1. One strategy => Question the LLM back about its suggestion. Like do I really need to implement it this way? And most likely, the following discussion leads to a more optimal understanding than the first session
+2. One thing to do differently => Slow down and review its refactoring suggestion line by line. This was a simpler codebase so it didn't matter as much. But in bigger codebases, it absolutely matters.
+3. It didn't change the way I think about AI generated code, but it taught me better ways to collaborate with it and slow down when learning from AI. I still want to learn how to get over its wall of text response and digest the info.
+
