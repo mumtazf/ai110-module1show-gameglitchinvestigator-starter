@@ -1,4 +1,4 @@
-# 🎮 Game Glitch Investigator: The Impossible Guesser
+# Capstone = Game Glitch Investigator: The Impossible Guesser
 
 ## 🚨 The Situation
 
